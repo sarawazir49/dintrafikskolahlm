@@ -3,12 +3,12 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+ min-width: 98%;
   background: rgba(34, 34, 34, 0.85); /* dark and semi-transparent */
   backdrop-filter: blur(8px);         /* background blur effect */
   -webkit-backdrop-filter: blur(8px); /* Safari support */
   color: white;
-  padding: 12px 20px;
+  padding: 12px 12px 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
