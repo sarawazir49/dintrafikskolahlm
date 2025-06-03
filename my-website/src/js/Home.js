@@ -1,57 +1,8 @@
 import kampani from '../media/kampanj.jpg';
 import dtsv from '../media/dtsv.mp4';
 import '../css/Home.css';
+import '../media/bacgr.png';
 
-const signs = [
-  {
-    id: 1,
-    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Swedish_road_sign_B1.svg/120px-Swedish_road_sign_B1.svg.png',
-    alt: 'Stop Sign',
-    shape: 'octagon',
-  },
-  {
-    id: 2,
-    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Swedish_road_sign_A7.svg/120px-Swedish_road_sign_A7.svg.png',
-    alt: 'Yield Sign',
-    shape: 'triangle',
-  },
-  {
-    id: 3,
-    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Swedish_road_sign_C22-1.svg/120px-Swedish_road_sign_C22-1.svg.png',
-    alt: 'Speed Limit',
-    shape: 'circle',
-  },
-  {
-    id: 4,
-    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Swedish_road_sign_C1.svg/120px-Swedish_road_sign_C1.svg.png',
-    alt: 'No Entry',
-    shape: 'circle',
-  },
-  {
-    id: 5,
-    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Swedish_road_sign_D3.svg/120px-Swedish_road_sign_D3.svg.png',
-    alt: 'Pedestrian Crossing',
-    shape: 'diamond',
-  },
-  {
-    id: 6,
-    src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Swedish_road_sign_A14.svg/120px-Swedish_road_sign_A14.svg.png',
-    alt: 'Road Work',
-    shape: 'diamond',
-  },
-];
-
-export function TrafficSignsGrid() {
-  return (
-    <div className="signs-grid">
-      {signs.map(sign => (
-        <div key={sign.id} className={`sign ${sign.shape}`}>
-          <img src={sign.src} alt={sign.alt} />
-        </div>
-      ))}
-    </div>
-  );
-}
 const Home = () => {
   return (
     <div className="container">
@@ -94,9 +45,12 @@ const Home = () => {
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-
-      <TrafficSignsGrid />
+  <div className='downImage'>
+    <img src={require('../media/bacgr.png')} alt="Background" />
+  </div>
     </div>
+  
+
   );
 };
 
