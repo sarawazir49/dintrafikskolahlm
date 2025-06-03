@@ -1,0 +1,125 @@
+/* Page background and centering */
+.bokning {
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #fce4ec, #ede7f6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  font-family: Arial, sans-serif;
+  flex-direction: column;
+  width: 700px;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+/* Card container styling */
+.bokning form {
+  background-color: #ffffff;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  height: 580px;
+  width: 600px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.bokning h1 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.bokning label {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  color: #374151;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.bokning input,
+.bokning select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.bokning input:focus,
+.bokning select:focus {
+  border-color: #ec4899;
+  box-shadow: 0 0 0 2px rgba(236, 72, 153, 0.4);
+}
+
+.bokning button {
+  background-color: #e23e4c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 9999px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bokning button:hover {
+  background-color: #db2777;
+}
+
+.success-message {
+  margin-top: 1rem;
+  color: #16a34a;
+  font-weight: 500;
+}
+
+.error-message {
+  margin-top: 1rem;
+  color: #dc2626;
+  font-weight: 500;
+}
+
+/* Tablet (e.g., iPads) */
+@media (max-width: 768px) {
+  .bokning {
+    width: 90%;
+    margin-top: 150px;
+    padding: 1rem;
+  }
+
+  .bokning form {
+    width: 100%;
+    height: auto;
+    padding: 1.5rem;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .bokning {
+    width: 95%;
+    margin-top: 100px;
+    padding: 0.5rem;
+  }
+
+  .bokning form {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .bokning h1 {
+    font-size: 1.5rem;
+  }
+
+  .bokning button {
+    width: 100%;
+  }
+}

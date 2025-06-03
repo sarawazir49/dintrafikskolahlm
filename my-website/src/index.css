@@ -1,0 +1,373 @@
+/* Base styles */
+.container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(to bottom, #e7dede, #be9898);
+  align-items: center;
+  color: #4a0000;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 30px;
+}
+.Dtsv{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  background-color: #ada9a9;
+  color: white;
+  width: 100%;
+
+  border-radius: 12px;
+}
+.Dtsv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  background-color: #ada9a9;
+  color: white;
+  width: 100%;
+  border-radius: 12px;
+  padding: 16px;
+  flex-wrap: wrap; /* helpful if content overflows */
+}
+
+/* For tablets and below */
+@media (max-width: 1024px) {
+  .Dtsv {
+    flex-direction: column;
+    align-items: stretch; /* makes items fill width */
+    text-align: center;
+  }
+}
+
+
+/* Header */
+.header {
+  background-color: #ada9a9;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInDown 0.8s ease;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto 20px;
+}
+.section1 {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  flex: 1 1 300px;
+  width: 1000px;
+  background-color: #ffffffa8;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+/* Sections */
+.section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  flex: 1 1 300px;
+  max-width: 100%;
+  background-color: #ffffffa8;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */ٍ
+.section h2 {
+  color: #b71c1c;
+  margin-bottom: 20px;
+}
+
+/* List */
+.list {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+  line-height: 2;
+ 
+
+}
+
+.list li {
+  background-color: #b6b4a6;
+  margin: 10px auto;
+  padding: 3px;
+  max-width: 350px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: bold;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  
+}
+
+.list li:hover {
+  transform: scale(1.05);
+  background-color: #dd1919;
+}
+
+/* Footer */
+.footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #880e4f;
+  background-color: #ebe8e5;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Animation */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .section {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .header,
+  .footer {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .list li {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .section h2 {
+    font-size: 1.4rem;
+  }
+}
+
+.App {
+  text-align: center;
+ 
+}
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-image: url('./media/bilar.jpg');
+  background-size:cover;
+  background-position:left;  /* Center the image */
+    background-repeat: no-repeat; /* No tiling */
+  min-height: 35vh;
+
+  align-items: start;
+  justify-content:baseline;
+
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.menu-bar {
+   
+    
+    flex-wrap: wrap;
+    gap: 10px;
+    font: white;
+    justify-content: center;
+ 
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.wrapper {
+  display: flex
+  ;
+      justify-content: flex-start;
+      background-color: rgba(148, 139, 139, 0.7);
+
+}
+.menu-bar a {
+    color: #fffde7; /* soft yellow */
+    text-decoration: none;
+    font-size:smaller;
+    padding: 10px 18px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.menu-bar a:hover {
+    background-color: #b1a2a2; /* darker red */
+    transform: scale(1.05);
+}
+.logo{
+  
+  padding: 20px;
+  display: flex;
+  animation-play-state: running;
+
+}
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;  /* two equal columns */
+  gap: 16px 30px;                 /* row and column spacing */
+  list-style: none;
+  padding: 0;
+  margin: 30px auto;
+  max-width: 600px;
+  text-align: left;
+}
+.button{
+  background-color: #b1a2a2; /* darker red */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: larger;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.3s;
+}
+/* Responsive Breakpoints */
+@media (max-width: 1024px) {
+  .list {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .menu-bar a {
+    font-size: 13px;
+    padding: 8px 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .App-header {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .menu-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-logo {
+    height: 30vmin;
+  }
+
+  .menu-bar a {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}
+.myapps{
+  display: flex;
+}
+.oppettider{
+  display: flex;
+  flex-direction: column;
+}
+.socialmedia{
+  display: flex;
+justify-content: flex-end;
+}
+
+
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: transparent color(red); 
+
+}
+
+.marquee-text {
+  display: inline-block;
+  animation: marquee 10s linear infinite;
+  font-size: 18px;
+  color: #ea2525;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+

@@ -1,0 +1,46 @@
+.MainKurses {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 10px;
+
+}
+.kursinfo{
+     border: 1px solid #ccc; padding: 10px;  margin-bottom: 10px;
+}
+.kurses-list {
+  background-color: #f9f9f9;
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+
+}
+
+/* Tablet (e.g. iPads) */
+@media (max-width: 768px) {
+  .MainKurses {
+    margin-top: 200px;
+    padding: 1rem;
+  }
+
+  .kurses-list {
+    width: 90%;
+    padding: 16px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .MainKurses {
+    margin-top: 120px;
+    padding: 0.5rem;
+  }
+
+  .kurses-list {
+    width: 95%;
+    padding: 12px;
+  }
+}
