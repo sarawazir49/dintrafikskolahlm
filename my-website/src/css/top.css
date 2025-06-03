@@ -150,6 +150,7 @@ body {
 
 /* Modern Footer Styles */
 .foter {
+  min-width: 98%;
   background-color: #111; /* dark modern background */
   color: #ccc;
   padding: 40px 20px;
