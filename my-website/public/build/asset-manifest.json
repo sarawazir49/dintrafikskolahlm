@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d87ed94b.css",
+    "main.js": "/static/js/main.9b78d826.js",
+    "static/js/453.195b869a.chunk.js": "/static/js/453.195b869a.chunk.js",
+    "static/media/dtsv.mp4": "/static/media/dtsv.c959aa1bfcb767e75955.mp4",
+    "static/media/kampanj.jpg": "/static/media/kampanj.b1d81a2e069384d44290.jpg",
+    "static/media/bilar.jpg": "/static/media/bilar.6f797e5fe70e39d72cad.jpg",
+    "static/media/signs.jpg": "/static/media/signs.c6ec1138e0faca9e86f7.jpg",
+    "index.html": "/index.html",
+    "main.d87ed94b.css.map": "/static/css/main.d87ed94b.css.map",
+    "main.9b78d826.js.map": "/static/js/main.9b78d826.js.map",
+    "static/js/453.195b869a.chunk.js.map": "/static/js/453.195b869a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d87ed94b.css",
+    "static/js/main.9b78d826.js"
+  ]
+}
