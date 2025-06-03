@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa';
-import '../css/Header.css';
+import '../css/top.css';
 
 const Header = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -9,7 +9,7 @@ const Header = () => {
   const closeSidebar = () => setSidebarOpen(false);
 
   return (
-    
+
     <header>
       <div className="App">
         <div className="App-header">

@@ -1,0 +1,187 @@
+/* Sticky and blurred header with animation */
+.App-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(34, 34, 34, 0.85); /* dark and semi-transparent */
+  backdrop-filter: blur(8px);         /* background blur effect */
+  -webkit-backdrop-filter: blur(8px); /* Safari support */
+  color: white;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); /* subtle drop shadow */
+  animation: slideDown 0.5s ease-out;
+}
+
+/* Slide down animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Offset content to avoid being hidden behind fixed header */
+body {
+  padding-top: 70px; /* adjust if your header height changes */
+}
+
+/* Hamburger for mobile */
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  display: none;
+  color: red;
+}
+
+/* Desktop menu links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #ffcc00;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.social-icons a:hover {
+  color: #ffcc00;
+}
+
+/* Marquee message */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #333;
+  margin-top: 10px;
+}
+
+.marquee-text {
+  display: inline-block;
+  padding: 10px 0;
+  animation: marquee 15s linear infinite;
+  font-size: 16px;
+  color: #ffcc00;
+}
+
+@keyframes marquee {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
+/* Mobile Sidebar */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 100vh;
+  background-color: #222;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: left 0.3s ease-in-out;
+  z-index: 999;
+}
+
+.mobile-sidebar.open {
+  left: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.sidebar-social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+/* Responsive behavior */
+@media screen and (max-width: 768px) {
+  .desktop-menu,
+  .desktop-only {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mobile-sidebar {
+    display: none;
+  }
+}
+
+/* Modern Footer Styles */
+.foter {
+  background-color: #111; /* dark modern background */
+  color: #ccc;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 60px;
+  border-top: 1px solid #333;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.foter p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.foter p:first-child {
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .foter {
+    padding: 30px 15px;
+  }
+
+  .foter p {
+    font-size: 14px;
+  }
+}
